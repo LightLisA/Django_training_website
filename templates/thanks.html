@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block index %}
+
+{% endblock %}
+
+{% block thanks %}
+	<!-- Дякую -->
+  	<section>
+		{% if name %}
+  		<div class="container">
+  			<CENTER style = 'margin-top: 35%; margin-bottom: 35%;'><h1>{{ name }}, Дякуємо за замовлення!</h1></CENTER>
+  		</div>
+		{% else %}
+		<div class="container">
+  			<CENTER style = 'margin-top: 35%; margin-bottom: 35%;'><h1>Сторінка: Дякую!!!</h1></CENTER>
+  		</div>
+		{% endif %}
+  	</section>
+  	<!-- Дякую -->
+{% endblock %}
